@@ -13,7 +13,7 @@
 :root {
   --bs-blue: #87CEFA;
   --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
+  --bs-purple: #4c2497;
   --bs-pink: #e21e80;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
@@ -11556,11 +11556,11 @@ html {
 
 .bg-gradient-primary-to-secondary {
   background: #87CEFA;
-  background: linear-gradient(135deg, #87CEFA 0%, #e21e80 100%);
+  background: linear-gradient(135deg, #87CEFA 0%, #4c2497 100%);
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(315deg, #87CEFA 0%, #e21e80 100%);
+  background: -webkit-linear-gradient(315deg, #87CEFA 0%, #4c2497 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
