@@ -2033,7 +2033,7 @@ progress {
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #000;
   opacity: 1;
 }
 .form-control:disabled {
