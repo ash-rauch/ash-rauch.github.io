@@ -4214,6 +4214,34 @@ textarea.form-control-lg {
   color: #000 !important;
 }
 
+/* Media container to hold both the image and video */
+.media-container {
+  display: flex; /* Align the image and video side by side */
+  justify-content: space-between; /* Ensure even spacing */
+  gap: 15px; /* Add some gap between the image and video */
+}
+
+/* Image and video inside the card */
+.card-body img,
+.card-body video {
+  max-width: 300px;  /* Limit the width */
+  max-height: 400px; /* Limit the height */
+  object-fit: cover; /* Ensure the image and video fit within the set dimensions */
+  border-radius: 0.375rem; /* Add a slight border-radius to match the card style */
+}
+
+/* Optional: Make media responsive */
+@media (max-width: 768px) {
+  .media-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .card-body img,
+  .card-body video {
+      max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
 }
