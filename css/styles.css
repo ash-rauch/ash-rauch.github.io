@@ -4157,6 +4157,8 @@ textarea.form-control-lg {
 }
 
 .card {
+  max-width: 1200px; /* Adjust this value to increase or decrease the width */
+  margin: 0 auto;    /* Centers the card horizontally */
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
@@ -4216,18 +4218,25 @@ textarea.form-control-lg {
 
 /* Media container to hold both the image and video */
 .media-container {
-  display: flex; /* Align the image and video side by side */
-  justify-content: space-between; /* Ensure even spacing */
-  gap: 15px; /* Add some gap between the image and video */
+  display: flex;
+  flex-direction: column; /* Stack image and video vertically */
+  gap: 15px; /* Space between the image and video */
+  align-items: center; /* Horizontally center the image and video */
 }
 
 /* Image and video inside the card */
 .card-body img,
 .card-body video {
-  max-width: 300px;  /* Limit the width */
-  max-height: 400px; /* Limit the height */
-  object-fit: cover; /* Ensure the image and video fit within the set dimensions */
-  border-radius: 0.375rem; /* Add a slight border-radius to match the card style */
+  max-width: 100%;  /* Ensure the image and video don't overflow */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the content fits well inside the container */
+  border-radius: 0.375rem; /* Slight rounding of the edges to match the card style */
+}
+
+/* Adjust card content layout */
+.d-flex.align-items-center {
+  display: flex;
+  justify-content: space-between; /* Keep text on the left, media on the right */
 }
 
 /* Optional: Make media responsive */
