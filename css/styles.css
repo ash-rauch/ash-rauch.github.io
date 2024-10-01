@@ -2006,6 +2006,14 @@ progress {
           appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  /* Placeholder text styling */
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="tel"]::placeholder,
+  textarea::placeholder {
+    color: #6c757d;  /* Gray placeholder text */
+    opacity: 1;  /* Ensure full visibility */
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -4203,7 +4211,7 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  color: var(--bs-card-color);
+  color: #000 !important;
 }
 
 .card-title {
